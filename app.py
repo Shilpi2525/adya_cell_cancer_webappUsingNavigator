@@ -25,7 +25,10 @@ def get_prediction(image_data):
 #Building the website
 
 #title of the web page
-st.title("Cancer Cell Image Classifictaion")
+st.title("Cancer Cell Image Classification")
+
+#setting the main picture
+st.image(IMAGE_URL, caption = "Cancer Cell Classification")
 
 #about the web app
 st.header("About the Web App")
@@ -72,4 +75,5 @@ if image:
   response_label = PREDICTED_LABELS[response]
 
   st.metric("Prediction Label",response_label)
+  st.metric("Confidence Score", max(scores))
   
