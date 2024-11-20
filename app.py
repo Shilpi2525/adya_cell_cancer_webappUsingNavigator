@@ -43,7 +43,7 @@ with st.expander("Web App 🌐"):
 image =st.file_uploader("Upload a cancer cell image",type = ['jpg','png','jpeg'])
 if image:
   #converting the image to bytes
-  img = Image.open(image)
+  img = Image.open(image).convert('RGB') #ensuring to convert into RGB as model expects the image to be in 3 channel
   buf = io.BytesIO()
   img.save(buf,format = 'JPEG')
   byte_im = buf.getvalue()
@@ -59,7 +59,7 @@ if image:
   }
 
   #write file details
-  st.write(file_details)
+  #st.write(file_details) #uncomment if you need to show file details
 
   #setting up the image
   st.image(img)
