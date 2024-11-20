@@ -7,7 +7,7 @@ import io
 
 #CONSTANTS
 PREDICTED_LABELS = ['High squamous intra-epithelial lesion','Low squamous intra-epithelial lesion','Negative for Intraepithelial malignancy','Squamous cell carcinoma']
-IMAGE_URL = "https://www.ncbi.nlm.nih.gov/core/lw/2.0/html/tileshop_pmc/tileshop_pmc_inline.html?title=HSIL%20of%20the%20Cervix%2C%20Nuclear-to-Cytoplasmic%20Ratio&p=BOOKS&id=430728_HSIL01.jpg"
+IMAGE_URL = "https://cdn.cancercenter.com/-/media/ctca/images/others/blogs/2016/08-august/09-news-cell-wars-fb.jpg"
 
 PREDICTED_LABELS.sort()
 
